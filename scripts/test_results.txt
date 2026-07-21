@@ -1,0 +1,18 @@
+=== DETECTION ENGINE UNIT TESTS ===
+PASS test_cooldown_suppresses_duplicates
+PASS test_flood_detected_aggregate: Source 10.0.0.9 is generating a smoothed 1500 packets/sec in aggregate across 10 flows (sustained for 3 polling cycles), above the 1000 pkt/s flood threshold.
+PASS test_flood_detected_per_flow: Flow 10.0.0.9:40000 -> 10.0.0.2:80 (TCP) is sending 9000 packets/sec (smoothed source rate 9000 pkt/s, sustained for 3 cycles), above the 500 pkt/s flood threshold.
+PASS test_flood_ema_smooths_toward_rate: EMA=1000 pkt/s
+PASS test_flood_hysteresis_ignores_single_spike
+PASS test_normal_traffic_no_scan
+PASS test_port_scan_detected: Source 10.0.0.1 contacted 20 distinct destination endpoints in the last 10s with an average of 1.0 packets per flow - consistent with a port/host scan.
+PASS test_volume_anomaly_after_baseline: Source 10.0.0.1 byte rate 5.00 MB/s is 25.0x its established baseline of 0.20 MB/s.
+
+8/8 detection tests passed.
+
+=== END-TO-END INTEGRATION TESTS ===
+PASS test_rate_computation_and_no_false_alert
+PASS test_end_to_end_flood_alert_and_mitigation (1 alert(s), attacker blocked)
+PASS test_end_to_end_port_scan_alert
+
+3/3 integration tests passed.

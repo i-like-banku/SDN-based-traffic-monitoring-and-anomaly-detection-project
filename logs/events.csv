@@ -1,0 +1,4 @@
+timestamp,iso_time,event,src_ip,category,severity,detail
+1784641147.643,2026-07-21 13:39:07,ALERT,10.0.0.1,FLOOD,HIGH,"Flow 10.0.0.1:0 -> 10.0.0.2:0 (ICMP) is sending 4000 packets/sec (smoothed source rate 3145 pkt/s, sustained for 3 cycles), above the 500 pkt/s flood threshold."
+1784641147.643,2026-07-21 13:39:07,MITIGATION,10.0.0.1,FLOOD,HIGH,drop rule installed (idle_timeout=30s)
+1784641197.643,2026-07-21 13:39:57,RECOVERY,10.0.0.1,FLOOD,,"mitigation expired, source unblocked"

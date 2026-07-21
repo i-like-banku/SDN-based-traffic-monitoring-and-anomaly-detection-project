@@ -1,0 +1,19 @@
+==========================================================
+  SDN DETECTION EVALUATION
+==========================================================
+  Attacker source          : 10.0.0.1
+  Attack window            : 13:39:03 - 13:39:27 (24.0s)
+  Polling intervals scored : 48
+  (recovery-window intervals excluded from scoring: 15)
+----------------------------------------------------------
+  Confusion matrix   TP=11  FP=0  FN=2  TN=20
+  Precision                : 100.0%
+  Recall (detection rate)  :  84.6%
+  F1 score                 :  91.7%
+  Accuracy                 :  93.9%
+----------------------------------------------------------
+  Detection latency        :   4.0s
+  Mitigation latency       :   4.0s
+  Recovery time            :  30.0s
+  Peak attack rate         :    4000 pkt/s
+==========================================================
